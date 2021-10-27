@@ -14,6 +14,8 @@ export const ThemeContext = createContext({} as ThemeContextProvider);
 const ThemeProvider: React.FC = ({ children }) => {
   const [theme, setTheme] = useState(DEFAULT_THEME);
 
+  document.getElementsByTagName('body')[0].className = theme;
+
   return (
     <ThemeContext.Provider
       value={{

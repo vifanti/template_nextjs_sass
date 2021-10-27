@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import Document, {
   DocumentContext,
   DocumentInitialProps,
@@ -8,14 +8,11 @@ import Document, {
   NextScript,
 } from 'next/document';
 import { ServerStyleSheet } from 'styled-components';
-import styles from '../styles/global.module.scss';
-import { ThemeContext } from '../contexts/ThemeContext';
 
 export default class MyDocument extends Document {
   static async getInitialProps(
     ctx: DocumentContext,
   ): Promise<DocumentInitialProps> {
-    // const { globalTheme } = useContext(ThemeContext);
     const sheet = new ServerStyleSheet();
     const originalRenderPage = ctx.renderPage;
 
@@ -53,7 +50,7 @@ export default class MyDocument extends Document {
 
           <link rel="icon" href="/favicon.ico" />
         </Head>
-        <body className={`${styles[globalTheme]}`}>
+        <body>
           <Main />
           <NextScript />
         </body>
