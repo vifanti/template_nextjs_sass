@@ -1,0 +1,17 @@
+@import "./theme.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box
+}
+
+body {
+
+  background: deeppink;
+
+
+  @include themify('background', 'primary');
+  @include themify('color', 'secondary');
+  font: 400 16px Roboto, sans-serif;
+}

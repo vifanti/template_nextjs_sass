@@ -1,0 +1,6 @@
+@import "../styles/theme.scss";
+
+.button {
+  @include themify('background', 'primary');
+  @include themify('color', 'secondary')
+}
