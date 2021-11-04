@@ -1,0 +1,26 @@
+@use './themes/dark-variables';
+@use './themes/light-variables';
+@use './themes/meio-dark-variables';
+
+@import url('https://fonts.googleapis.com/css2?family=Fruktur&family=Irish+Grover&display=swap');
+
+html,
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+  transition: background-color 0.5s;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
