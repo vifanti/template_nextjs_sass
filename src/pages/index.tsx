@@ -4,7 +4,7 @@ import Image from 'next/image';
 import { useTheme } from 'next-themes';
 
 import VercelLogo from '../assets/vercel.svg';
-import styles from '../styles/Home.module.scss';
+import styles from '../styles/pages/Home.module.scss';
 
 const Home: React.FC = () => {
   const { theme, setTheme, systemTheme } = useTheme();
