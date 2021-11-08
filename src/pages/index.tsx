@@ -17,7 +17,7 @@ const Home: React.FC = () => {
 
       <Image src={VercelLogo} />
       <h1>Template Next.js</h1>
-      <p>Preparado com SASS, importação de imagens, temas, eslint e prettier</p>
+      <p>Preparado com SASS, temas, eslint e prettier</p>
 
       <div className={styles.buttonContainer}>
         <h4>The current theme is: {theme}</h4>

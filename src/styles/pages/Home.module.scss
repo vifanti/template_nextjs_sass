@@ -9,3 +9,7 @@
   font-size: 40px;
   font-style: italic;
 }
+
+:global(.button) {
+  color: red;
+}
